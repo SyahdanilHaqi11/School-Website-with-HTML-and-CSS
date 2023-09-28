@@ -1,0 +1,247 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-brand {
+  font-family: Viga;
+  font-size: 20px;
+}
+
+.jumbotron {
+  background-image: url(img/bg1.jpg);
+  background-size: cover;
+  height: 640px;
+  text-align: center;
+}
+
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+}
+
+.jumbotron .display-4 {
+  color: white;
+  margin-top: 150px;
+  font-weight: 200;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+  font-size: 40px;
+}
+
+.jumbotron .display-4 span {
+  font-weight: 500;
+}
+
+.description-container {
+  height: 280px;
+  margin: 40px 0;
+  display: flex;
+}
+
+.description-container > div {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 4px 8px 0px rgba(1, 1, 1, 0.1);
+  border-top: 1px solid rgb(228, 228, 228);
+}
+
+.description-container h2 {
+  color: var(--darkGray);
+  font-weight: bolder;
+}
+
+.description-container p {
+  color: var(--gray);
+}
+
+.description-container > div > div {
+  width: 500px;
+}
+
+.description-container > img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.lingkaran {
+  display: inline-block;
+  border-radius: 50%;
+  width: 150px;
+  margin: auto;
+  height: 150px;
+  color: #fff;
+  background-color: #dc3545;
+}
+
+.lingkaran i {
+  position: relative;
+  top: 30px;
+}
+
+.what-is-container {
+  height: 600px;
+  padding: 0 10%;
+  display: flex;
+  margin: 40px 0;
+}
+
+.what-is-container h1 {
+  font-size: 60px;
+}
+
+.what-is-container p {
+  color: var(--gray);
+  font-size: 16px;
+}
+
+.what-is-container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 48%;
+  background: yellow;
+  background: var(--grayLight);
+}
+
+.what-is-container > div > div {
+  width: 400px;
+}
+
+.what-is-container > img {
+  width: 60%;
+  height: 80%;
+  background: red;
+}
+
+.what-is-container > div > .footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  background-color: #eaf0f2;
+}
+
+header {
+  text-align: center;
+  padding-top: 100px;
+  margin-bottom: 300px;
+  font-size: 35px;
+}
+
+header h2 {
+  color: #f0525f;
+}
+
+header span {
+  color: #eaa03f;
+}
+
+footer {
+  background-color: #17a2b8;
+}
+
+.footercontainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.socialicons {
+  display: flex;
+  justify-content: center;
+}
+
+.socialicons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 100%;
+}
+.socialicons a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+}
+.socialicons a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+.socialicons a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+.footernav {
+  margin: 10px 0;
+}
+.footernav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.footernav ul li a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footernav ul li a:hover {
+  opacity: 1;
+}
+
+.footerbot {
+  background-color: #22668d;
+  padding: 20px;
+  text-align: center;
+}
+.footerbot p {
+  color: white;
+}
+
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+/* desk */
+@media (min-width: 992px) {
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #ffff;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .jumbotron {
+    height: 640;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 62px;
+  }
+}
